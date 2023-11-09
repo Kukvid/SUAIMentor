@@ -379,10 +379,10 @@ a{
 }
 .ellipse-8{
     position: absolute;
-    top: 1258px;
-    right: -675px;
+    top: 1233px;
+    right: -600px;
     width: 900px;
-    height: 600px;
+    height: 700px;
     background-repeat: no-repeat;
     background-image: url('media/Ellipse-8.png');
 }
@@ -406,8 +406,8 @@ a{
 }
 .ellipse-11{
     position: absolute;
-    top: 1786px;
-    right: -555px;
+    top: 1804px;
+    right: -509px;
     width: 900px;
     height: 600px;
     background-repeat: no-repeat;
