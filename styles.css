@@ -139,7 +139,7 @@ a{
     text-decoration: none;
 }
 .header__nav{
-    margin-left: 12.5rem;
+    padding-left: 10.5rem;
 }
 .header__list{
     display: flex;
@@ -153,6 +153,22 @@ a{
     font-weight: 700;
     line-height: normal;
 }
+.Ubuntu-text-700-documentation{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 143.4%; /* 51.624px */
+}
+.Ubuntu-text-700-teachers{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143.4%; /* 51.624px */
+}
 .Ubuntu-text-500{
     color: #000;
     font-family: 'Ubuntu';
@@ -161,12 +177,45 @@ a{
     font-weight: 500;
     line-height: normal;
 }
+.Ubuntu-text-500-documentation{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143.4%; /* 45.888px */
+}
 .Ubuntu-text-400{
     font-family: 'Ubuntu';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;}
+    line-height: normal;
+}
+.Ubuntu-text-400-documentation{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+}
+.Ubuntu-text-400-documentation2{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+}
+.Ubuntu-text-400-documentation3{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+}
 .Ubuntu-text-300{
     color: #000;
     font-family: 'Ubuntu';
@@ -187,16 +236,6 @@ a{
 .header__item:last-child{
     margin-right: 71px;
 }
-/* body{
-    color: #000;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-size: 60px;
-    line-height: normal;
-    font-weight: 500;
-    background-color: #fff;
-
-} */
 .header__link{
     color: #000;
     font-family: 'Ubuntu';
@@ -485,3 +524,86 @@ footer{
 .footer__item:last-child{
     padding-bottom: 0px;
 }
+.active{
+    font-weight: bold;
+}
+main{
+    background-image: url("media/backgroung.png");
+    background-size: cover;
+    object-fit: cover;
+}
+.documentation__section{
+    min-width: 1258px;
+    padding: 29px 91px 48px 91px;
+}
+.teachers__section{
+    min-width: 1258px;
+    padding: 33px 91px 48px 91px;
+}
+.documentation__text__block{
+    background-color: rgba(255, 255, 255, 0.50);
+    margin-top: 37px;
+}
+.documentation__text__div{
+    padding: 47px 71px 160px 71px;
+}
+.documentation__list{
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+.documentation__link{
+    color: #000;
+    text-decoration: underline;
+}
+.documentation__link:hover{
+    color: #CE242B;
+}
+.documentation__rules__list li{
+    margin-top: 2rem;
+}
+ul > .card__teacher{
+    margin-right: 5rem;
+    max-width: 22.813rem;
+    max-height: 22.813rem;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem 3.625rem;
+}
+ul.row__blue > .card__teacher{
+    background-color: rgba(183, 207, 255, 0.50);
+}
+ul.row__grey > .card__teacher{
+    background-color: rgba(238, 238, 238, 0.50);
+}
+li.card__teacher:last-child{
+    margin-right: 0;
+}
+ul.row{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.teacher__image{
+    max-width: 12.625rem;
+    max-height: 12.625rem;
+}
+.teacher__name{
+    width: 15rem;
+    height: 4.188rem;
+    text-align: center;
+    border-radius: 15px;
+    background: #FFF;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+.teachers__list__text{
+    margin-bottom: 1.5rem;
+}
+.teacher__link{
+    color: #000;
+    text-decoration: none;
+}
+/* .teacher__department{
+    max-width: 11.375rem;
+    max-height: 1.563rem;
+} */
