@@ -185,6 +185,23 @@ a{
     font-weight: 500;
     line-height: 143.4%; /* 45.888px */
 }
+.Ubuntu-text-500-teacher{
+    color: #000;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143.4%; /* 34.416px */
+}
+.Ubuntu-text-500-teacher2{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 143.4%; /* 34.416px */
+}
 .Ubuntu-text-400{
     font-family: 'Ubuntu';
     font-size: 20px;
@@ -200,6 +217,15 @@ a{
     font-weight: 400;
     line-height: 143.4%;
 }
+.Ubuntu-text-400-teacher{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .Ubuntu-text-400-documentation2{
     color: #000;
     font-family: 'Ubuntu';
@@ -223,6 +249,14 @@ a{
     font-style: normal;
     font-weight: 300;
     line-height: normal;}
+.Ubuntu-text-300-teacher{
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 .header__item{
     color: #000;
     font-family: 'Ubuntu';
@@ -540,6 +574,11 @@ main{
     min-width: 1258px;
     padding: 33px 91px 13rem 91px;
 }
+.teacher__page__section{
+    padding: 3rem 10rem 24rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 .documentation__text__block{
     background-color: rgba(255, 255, 255, 0.50);
     margin-top: 37px;
@@ -603,7 +642,68 @@ ul.row{
     color: #000;
     text-decoration: none;
 }
-/* .teacher__department{
-    max-width: 11.375rem;
-    max-height: 1.563rem;
-} */
+.teacher__page__section{
+    padding: 10rem 4rem;
+    justify-content: center;
+}
+.teacher__bio{
+    width: 22rem;
+    height: fit-content;
+    padding-right: 4rem;
+    text-align: center;
+    
+}
+.bio__teacher__name{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+.bio__teacher__job{
+    border-radius: 15px;
+    background-color: #0A5BBD;
+    color: #FFF;
+    width: 220px;
+    height: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* justify-content: center; */
+    padding: 6px 21px;
+    margin-bottom: 18px;
+    /* flex-shrink: 0; */
+}
+.bio__teacher__image{
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 6px;
+}
+.teacher__answers__block{
+    width: 46rem;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #FFF;
+    padding-bottom: 5%;
+}
+.teacher__answers__text{
+    padding: 16px  10px 100px 34px;
+}
+.bio__teacher__department__email{
+    text-align: left;
+    width: 293px;
+    min-height: 102px;
+    border-radius: 10px;
+    border: 1px solid #0A5BBD;
+    background-color: rgba(255, 255, 255, 0.57);
+    padding: 19px 20px 13px 20px;
+    height: fit-content;
+}
+.bio__teacher__department{
+    margin-bottom: 5px;
+    width: fit-content;
+    word-break: break-all;
+}
+.bio__teacher__email{
+    width: fit-content;
+    word-break: break-all;
+}
