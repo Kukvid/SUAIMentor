@@ -6,10 +6,6 @@ async function main(){
     let newRow = ""
     let groupIDs = []
     let currentPerson;
-    // for (let people in peopleList){
-    //     console.log(peopleList[people])
-    // }
-    // for (let i = 0; i < peopleList.Length; i++)
     for (let i = 0; i < peopleList.length; i+=3){
         if (i + 3 > peopleList.length) {
             if (i + 2 == peopleList.length) {
@@ -29,11 +25,11 @@ async function main(){
             newRow = `<ul class="row row__grey">`
         }
         for (let peopleID of groupIDs){
-           currentPerson = peopleList[peopleID] 
+           currentPerson = peopleList[peopleID]
            newRow += `
             <li class="card__teacher">
-            <a class="teacher__link" href="template_teacher\\${peopleID}">
-                <img class="teacher__image" src="teachers_images/Default.png" alt="Default teacher image">
+            <a class="teacher__link" href="teachers\\${peopleID}">
+                <img class="teacher__image" src="../static/teachers_images/Default.png" alt="Default teacher image">
                 <div class="teacher__name">
                 <p class="Ubuntu-text-700-teachers">
                     ${currentPerson.last_name +" "+ currentPerson.first_name +" "+ currentPerson.middle_name}
@@ -48,7 +44,6 @@ async function main(){
             </li>
            `
         }
-        console.log(groupIDs)
         newRow += "</ul>"
         teacher_list.innerHTML += newRow
         newRow = ""

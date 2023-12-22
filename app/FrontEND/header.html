@@ -1,0 +1,31 @@
+<header class="header">
+      <div class="logo">
+        <a href="{{ url_for_main}}" class="header__logo__link">
+          <img
+            src="../static/media/SUAIMentor-logo.svg"
+            alt="logo.png"
+            class="logo__pic"
+          />
+          <span class="logo__text">SUAIMentor</span>
+        </a>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="{{ url_for_main}}" class="header__link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="{{ url_for_teachers}}" class="header__link">Научные руководители</a>
+          </li>
+          <li class="header__item">
+            <a href="{{ url_for_documentation}}" class="header__link">Документация</a>
+          </li>
+          <li class="header__item">
+            <a href="mailto:suaimentor@rambler.ru" class="header__link">
+              <strong>suaimentor@rambler.ru</strong>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>

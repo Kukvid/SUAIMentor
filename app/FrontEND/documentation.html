@@ -4,41 +4,10 @@
     <title>SUAIMentor</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="media/favicon-32x32.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="icon" href="../static/media/favicon-32x32.png" />
+<link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">  </head>
   <body class="documentation__body">
-    <header class="header">
-      <div class="logo">
-        <a href="index.html" class="header__logo__link">
-          <img
-            src="media/SUAIMentor-logo.svg"
-            alt="logo.png"
-            class="logo__pic"
-          />
-          <span class="logo__text">SUAIMentor</span>
-        </a>
-      </div>
-
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="index.html" class="header__link">Главная</a>
-          </li>
-          <li class="header__item">
-            <a href="teachers.html" class="header__link">Научные руководители</a>
-          </li>
-          <li class="header__item">
-            <a href="#!" class="header__link active">Документация</a>
-          </li>
-          <li class="header__item">
-            <a href="mailto:suaimentor@rambler.ru" class="header__link">
-              <strong>suaimentor@rambler.ru</strong>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    {% include "header.html" %}
 
     <main>
         <section class="documentation__section">
@@ -55,10 +24,11 @@
                             </p>
                             <ul class="documentation__list">
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/spo.docx">Дипломный проект (работа)</a>
+
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/spo.docx')}}">Дипломный проект (работа)</a>
                                     </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/spo_otz.docx">Форма отзыва на ВКР</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/spo_otz.docx')}}">Форма отзыва на ВКР</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,22 +38,22 @@
                             </p>
                             <ul class="documentation__list">
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/bak.docx">Бакалаврские работы</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/bak.docx')}}">Бакалаврские работы</a>
                                     </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/mag.docx">Магистерские диссертации</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/mag.docx')}}">Магистерские диссертации</a>
                                 </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/spec_dr.docx">Для специалистов. Дипломная работа</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/spec_dr.docx')}}">Для специалистов. Дипломная работа</a>
                                     </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/spec_dp.docx">Для специалистов. Дипломный проект</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/spec_dp.docx')}}">Для специалистов. Дипломный проект</a>
                                 </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/otz.docx">Форма отзыва на ВКР</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/otz.docx')}}">Форма отзыва на ВКР</a>
                                     </li>
                                 <li class="documentation__list__item">
-                                    <a class="documentation__link" href="docs/rec.docx">Форма рецензии</a>
+                                    <a class="documentation__link" href="{{ url_for('static', path='/docs/rec.docx')}}">Форма рецензии</a>
                                 </li>
                             </ul>
                         </div>
@@ -100,16 +70,16 @@
                                 </p>
                                 <ul class="documentation__list">
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/spo2.docx">Для студентов СПО. Дипломный проект (работа) для СПО</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/spo2.docx')}}">Для студентов СПО. Дипломный проект (работа) для СПО</a>
                                         </li>
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/bak (1).docx">Для бакалавров. Бакалаврские работы</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/bak (1).docx')}}">Для бакалавров. Бакалаврские работы</a>
                                     </li>
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/spec.docx">Для специалистов. Дипломный проект</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/spec.docx')}}">Для специалистов. Дипломный проект</a>
                                         </li>
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/mag (1).docx">Для магистров. Магистерские диссертации</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/mag (1).docx')}}">Для магистров. Магистерские диссертации</a>
                                     </li>
                                 </ul>
                             </div>
@@ -120,10 +90,10 @@
                                 </p>
                                 <ul class="documentation__list">
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/bak_igf.docx">Для бакалавров. Бакалаврские работы</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/bak_igf.docx')}}">Для бакалавров. Бакалаврские работы</a>
                                         </li>
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/spec_igf.docx">Для специалистов. Дипломный проект</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/spec_igf.docx')}}">Для специалистов. Дипломный проект</a>
                                     </li>
                                 </ul>
                             </div>
@@ -133,10 +103,10 @@
                                 </p>
                                 <ul class="documentation__list">
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/otz (1).docx">Отзыв</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/otz (1).docx')}}">Отзыв</a>
                                         </li>
                                     <li class="documentation__list__item">
-                                        <a class="documentation__link" href="docs/rec (1).docx">Рецензия</a>
+                                        <a class="documentation__link" href="{{ url_for('static', path='/docs/rec (1).docx')}}">Рецензия</a>
                                     </li>
                                 </ul>
                             </div>
@@ -340,42 +310,6 @@
         </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__text__block">
-        <div class="footer__first__text">
-          <div class="footer__logo">
-            <a href="index.html" class="footer__logo__link">
-              <img
-                src="media/SUAIMentor-logo.svg"
-                alt="logo.png"
-                class="footer__logo__pic"
-              />
-              <span class="footer__logo__text">SUAIMentor</span>
-            </a>
-          </div>
-          <p class="footer__mail__link">
-            <a href="mailto:suaimentor@rambler.ru" class="footer__mail__link">
-              <strong>suaimentor@rambler.ru</strong>
-            </a>
-          </p>
-          <p class="footer__copyright Ubuntu-text-400">
-            ©2023 SUAIMentor
-          </p>
-        </div>
-        <div class="footer__second__text">
-          <ul class="footer__list">
-            <li class="footer__item Ubuntu-text-400">
-              <a href="index.html" class="footer__link">Главная</a>
-            </li>
-            <li class="footer__item Ubuntu-text-400">
-              <a href="teachers.html" class="footer__link">Научные руководители</a>
-            </li>
-            <li class="footer__item Ubuntu-text-400">
-              <a href="documentation.html" class="footer__link">Документация</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </footer>
+    {% include "footer.html" %}
   </body>
 </html>

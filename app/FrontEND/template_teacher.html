@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SUAIMentor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/media/favicon-32x32.png" />
+<link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+  </head>
+  <body class="teacher__page__body">
+    {% include "header.html" %}
+    <main>
+        <section class="teacher__page__section">
+            <div class="teacher__bio">
+                <img class="bio__teacher__image" src="../static/teachers_images/Default.png" alt="teacher image">
+                <p class="bio__teacher__name Ubuntu-text-500-teacher">{{name}}</p>
+                <div class="bio__teacher__job Ubuntu-text-500-teacher2">
+                    {{post}}
+                </div>
+                <div class="bio__teacher__department__email">
+                  <p class="Ubuntu-text-500-teacher2 bio__teacher__department">
+                      Кафедра {{department}}
+                    </p>
+                    <p class="Ubuntu-text-400 bio__teacher__email">
+                        {{email}}
+                    </p>  
+                </div>
+            </div>
+            <div class="teacher__answers__block">
+              <div class="teacher__answers__text">
+               <p class="Ubuntu-text-400-teacher">У какого количества человек Вы готовы быть научным руководителем?</p>
+               <p class="Ubuntu-text-300-teacher"> — {{answer1}}</p>
+               <p class="Ubuntu-text-400-teacher">Сколько людей в среднем каждый год хотят писать диплом с Вашей помощью?</p>
+               <p class="Ubuntu-text-300-teacher"> — {{answer2}}</p>
+               <p class="Ubuntu-text-400-teacher">Как в целом проходит написание диплома с Вами (вводные моменты, общие советы)?</p>
+               <p class="Ubuntu-text-300-teacher">— {{answer3}}</p>
+               <p class="Ubuntu-text-400-teacher">Как часто происходят встречи для консультации по диплому?</p>
+               <p class="Ubuntu-text-300-teacher"> — {{answer4}}</p>
+               <p class="Ubuntu-text-400-teacher">Какую документацию (сайты) Вы советуете для помощи в оформлении?</p>
+               <p class="Ubuntu-text-300-teacher"> — {{answer5}}</p>
+               <p class="Ubuntu-text-400-teacher">Участвуете ли Вы в организации предзащиты и защиты? Если да, то от каких факторов зависят их даты?</p>
+               <p class="Ubuntu-text-300-teacher"> — {{answer6}}
+               </p>
+              </div>
+            </div>
+        </section>
+    </main>
+    {% include "footer.html" %}
+  </body>
+</html>
